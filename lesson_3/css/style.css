@@ -1,0 +1,42 @@
+@import url(reset.css);
+
+[class*="__title"] {
+    color: blue;
+}
+a{
+    color: red;
+}
+.block-1 p{
+    color: purple;
+}
+.block-2 > p {
+    color: green;
+}
+.block-3 {
+color: blueviolet;
+}
+div.block-4{
+    color: rgb(73, 167, 176);
+}
+.block-10 * {
+    color: brown;
+}
+.block-5,
+.block-6 {
+    color: rgb(203, 212, 25);
+}
+#t-8 {
+    color: rgb(255, 140, 0);
+}
+.block-7__title ~ p {
+    color: rgb(0, 119, 254);
+}
+.block-8__title + p {
+    color: rgb(97, 97, 97);
+}
+.block-8 .block-8__title {
+    color: rgb(191, 217, 130);
+}
+.list.item {
+color: rgb(245, 130, 130);
+}
