@@ -1,0 +1,43 @@
+@import url(reset.css);
+
+[class*="__container"] {
+    max-width: 1430px;
+    padding: 20px 15px;
+    margin: 0 auto;
+}
+body {
+    font-family: "Poppins";
+}
+.icons {
+    background: #e2da85;
+}
+.icons__title,
+.design-images__title,
+.content-images__title {
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: 0 0 20px 0;
+    color: rgb(53, 67, 232);
+}
+p {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+    font-family: "Inter";
+}
+.design-images {
+    background: #ed8484;
+}
+.design-images__item {
+    min-height: 220px;
+    background: url(../img/design_images/design_image_01.svg) no-repeat, url(../img/design_images/design_image_02.svg) 170px 0 no-repeat,
+    url(../img/design_images/design_image_03.svg) 260px 0 no-repeat, url(../img/design_images/design_image_04.svg) 410px 0 no-repeat,
+    url(../img/design_images/design_image_05.svg) 490px 0 no-repeat, url(../img/design_images/design_image_06.svg) 580px 0 no-repeat,
+    url(../img/design_images/design_image_07.svg) 660px 0 no-repeat;
+}
+.image {
+    padding: 15px;
+    max-width: 270px;
+}
