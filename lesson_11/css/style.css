@@ -1,0 +1,228 @@
+@import url(reset.css);
+
+body {
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 500;
+    color: #637381;
+}
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+.header__container,
+.text__container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header__items {
+    padding: 40px 0;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: center;
+    background: #fff;
+}
+.header__logo {
+    margin: 0 45px 0 0;
+}
+.header__categories-link {
+    display: inline-block;
+    padding: 9px 20px;
+    font-weight: 600;
+    line-height: 1.5; /* 24/16 */
+    color: #212B36;
+    margin: 0 45px 0 0;
+    position: relative;
+    z-index: 2;
+}
+.header__categories-link:hover {
+    background: #F4F7FF;
+    border-radius: 5px;
+    transition: all 0.3s;
+    color: #3056D3;
+}
+.header__categories:hover .menu-categories {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+.header__categories {
+    display: inline-block;
+}
+.item-arrow__link::after {
+    content: "";
+    display: inline-block;
+    background: url(../img/icons/arrow_down.svg) 0 0 no-repeat;
+    width: 11px;
+    height: 6px;
+    margin: 0 0 0 7px;
+}
+.menu__item:hover {
+    color: #3056D3;
+    transition: all 0.3s;
+}
+.menu__item-arrow:hover {
+    color: #3056D3;
+    transition: all 0.3s;
+}
+.header__categories {
+    position: relative;
+}
+.header__categories-link::after {
+    content: "";
+    display: inline-block;
+    background: url(../img/icons/arrow_down.svg) 0 0 no-repeat;
+    width: 11px;
+    height: 6px;
+    margin: 0 0 0 13px;
+}
+.header__menu {
+    display: inline-block;
+    margin: 0 125px 0 0;
+}
+.menu__item,
+.menu__item-arrow {
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1.5; /* 24/16 */
+    color: #212B36;
+}
+.menu__item:not(:last-child) {
+    margin: 0 35px 0 0;
+}
+.menu__item-arrow {
+    margin: 0 35px 0 0;
+}
+.header__icons {
+    display: inline-block;
+}
+.header__icons-img img:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+.header__icons-img:not(:last-child) {
+    margin: 0 11px 0 0;
+}
+.menu-categories {
+    position: absolute;
+    top: 150%;
+    left: 0;
+    padding: 22px;
+    visibility: hidden;
+    transition: all 0.3s;
+    pointer-events: none;
+    opacity: 0;
+    background: #fff;
+    border-radius: 5px;
+}
+.menu-categories::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 140%;
+    width: 140%;
+    top: -20%;
+    left: -20%;
+    z-index: -1;
+}
+.menu-categories__item:not(:last-child) {
+    margin: 0 0 13px 0;
+}
+.menu-categories__item-sub {
+    margin: 0 0 13px 0;
+}
+.menu-categories__link {
+    line-height: 1.5; /* 24/16 */
+}
+.menu-categories__link:hover {
+    color: #3056D3;
+    transition: all 0.3s;
+}
+.link-categories::after {
+    content: "";
+    display: inline-block;
+    background: url(../img/icons/arrow_right.svg) 0 0 no-repeat;
+    width: 10px;
+    height: 10px;
+    margin: 0 0 0 65px;
+}
+.sub-menu {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    background: #FFFFFF;
+    border-radius: 5px;
+    top: 30px;
+    left: 100%;
+    transition: all .5s;
+    padding: 30px;
+    min-width: 700px;
+}
+.menu-categories__item-sub:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.sub-menu__item {
+    display: inline-block;
+    margin: 0 80px 0 0;
+    vertical-align: top;
+}
+.sub-menu__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #212B36;
+    margin: 0 0 20px 0;
+}
+.list-sub-menu__item {
+    line-height: 1.5;
+}
+.list-sub-menu__item:not(:last-child) {
+    margin: 0 0 12px 0;
+}
+.list-sub-menu__link:hover {
+    color: #3056D3;
+    transition: all 0.3s;
+}
+.sub-menu__block-img {
+    display: inline-block;
+    position: relative;
+}
+.sub-menu__block-price {
+    position: absolute;
+    top: 23%;
+    left: 23%;
+}
+.sub-menu__discount {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2; /* 48/40 */
+    color: #fff;
+    text-align: center;
+}
+.sub-menu__text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2; /* 24/20 */
+    color: #fff;
+    text-align: center;
+    margin: 0 0 35px 0;
+}
+.sub-menu__btn {
+    padding: 8px 20px;
+    background: #3056D3;
+    color: #fff;
+    border-radius: 3px;
+    align-items: center;
+}
+.sub-menu__btn:hover {
+    background: #10319dc4;
+    transition: all 0.3s;
+}
+.text {
+    padding: 130px 0 0 0;
+}
